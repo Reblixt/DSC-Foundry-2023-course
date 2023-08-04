@@ -1,0 +1,161 @@
+Compiling 30 files with 0.8.21
+Solc 0.8.21 finished in 3.35s
+Compiler run [32msuccessful![0m
+Analysing contracts...
+Running tests...
+Uncovered for script/DeployDecentralicedStableCoin.s.sol:
+- Function "run" (location: source ID 26, line 11, chars 295-506, hits: 0)
+- Line (location: source ID 26, line 12, chars 363-382, hits: 0)
+- Statement (location: source ID 26, line 12, chars 363-382, hits: 0)
+- Line (location: source ID 26, line 13, chars 392-451, hits: 0)
+- Statement (location: source ID 26, line 13, chars 392-451, hits: 0)
+- Statement (location: source ID 26, line 13, chars 422-451, hits: 0)
+- Line (location: source ID 26, line 14, chars 461-479, hits: 0)
+- Statement (location: source ID 26, line 14, chars 461-479, hits: 0)
+- Line (location: source ID 26, line 15, chars 489-499, hits: 0)
+- Statement (location: source ID 26, line 15, chars 489-499, hits: 0)
+
+Uncovered for src/DSCEngine.sol:
+- Function "depositCollateralAndMintDsc" (location: source ID 27, line 104, chars 3101-3151, hits: 0)
+- Function "depositCollateral" (location: source ID 27, line 113, chars 3332-3727, hits: 0)
+- Line (location: source ID 27, line 119, chars 3555-3632, hits: 0)
+- Statement (location: source ID 27, line 119, chars 3555-3632, hits: 0)
+- Line (location: source ID 27, line 120, chars 3642-3720, hits: 0)
+- Statement (location: source ID 27, line 120, chars 3642-3720, hits: 0)
+- Function "redeemCollateralForDsc" (location: source ID 27, line 123, chars 3733-3778, hits: 0)
+- Function "redeemCollateral" (location: source ID 27, line 125, chars 3784-3823, hits: 0)
+- Function "mintDsc" (location: source ID 27, line 127, chars 3829-3859, hits: 0)
+- Function "burnDsc" (location: source ID 27, line 129, chars 3865-3895, hits: 0)
+- Function "liquidate" (location: source ID 27, line 131, chars 3901-3933, hits: 0)
+- Function "getHealthFactor" (location: source ID 27, line 133, chars 3939-3982, hits: 0)
+
+Uncovered for src/DecentralizedStableCoin.sol:
+- Branch (branch: 2, path: 0) (location: source ID 28, line 60, chars 1644-1740, hits: 0)
+- Line (location: source ID 28, line 61, chars 1681-1729, hits: 0)
+- Statement (location: source ID 28, line 61, chars 1681-1729, hits: 0)
+- Branch (branch: 3, path: 0) (location: source ID 28, line 63, chars 1749-1844, hits: 0)
+- Line (location: source ID 28, line 64, chars 1781-1833, hits: 0)
+- Statement (location: source ID 28, line 64, chars 1781-1833, hits: 0)
+
+Anchors for Contract "DeployDecentralicedStableCoin" (solc 0.8.21+commit.d9974bed.Linux.gcc, source ID 26):
+- IC 100 -> Item 36
+  - Refers to item: Function "run" (location: source ID 26, line 11, chars 295-506, hits: 0)
+- IC 213 -> Item 37
+  - Refers to item: Line (location: source ID 26, line 12, chars 363-382, hits: 0)
+- IC 213 -> Item 38
+  - Refers to item: Statement (location: source ID 26, line 12, chars 363-382, hits: 0)
+- IC 308 -> Item 39
+  - Refers to item: Line (location: source ID 26, line 13, chars 392-451, hits: 0)
+- IC 308 -> Item 40
+  - Refers to item: Statement (location: source ID 26, line 13, chars 392-451, hits: 0)
+- IC 310 -> Item 41
+  - Refers to item: Statement (location: source ID 26, line 13, chars 422-451, hits: 0)
+- IC 389 -> Item 42
+  - Refers to item: Line (location: source ID 26, line 14, chars 461-479, hits: 0)
+- IC 389 -> Item 43
+  - Refers to item: Statement (location: source ID 26, line 14, chars 461-479, hits: 0)
+- IC 484 -> Item 44
+  - Refers to item: Line (location: source ID 26, line 15, chars 489-499, hits: 0)
+- IC 484 -> Item 45
+  - Refers to item: Statement (location: source ID 26, line 15, chars 489-499, hits: 0)
+
+Anchors for Contract "DecentralizedStableCoin" (solc 0.8.21+commit.d9974bed.Linux.gcc, source ID 28):
+- IC 554 -> Item 0
+  - Refers to item: Function "burn" (location: source ID 28, line 48, chars 1192-1553, hits: 3)
+- IC 1401 -> Item 1
+  - Refers to item: Line (location: source ID 28, line 49, chars 1259-1298, hits: 3)
+- IC 1401 -> Item 2
+  - Refers to item: Statement (location: source ID 28, line 49, chars 1259-1298, hits: 3)
+- IC 1403 -> Item 3
+  - Refers to item: Statement (location: source ID 28, line 49, chars 1277-1298, hits: 3)
+- IC 1414 -> Item 4
+  - Refers to item: Line (location: source ID 28, line 50, chars 1312-1324, hits: 3)
+- IC 1414 -> Item 5
+  - Refers to item: Statement (location: source ID 28, line 50, chars 1312-1324, hits: 3)
+- IC 1422 -> Item 6
+  - Refers to item: Branch (branch: 0, path: 0) (location: source ID 28, line 50, chars 1308-1403, hits: 1)
+- IC 1471 -> Item 7
+  - Refers to item: Branch (branch: 0, path: 1) (location: source ID 28, line 50, chars 1308-1403, hits: 2)
+- IC 1422 -> Item 8
+  - Refers to item: Line (location: source ID 28, line 51, chars 1340-1392, hits: 1)
+- IC 1422 -> Item 9
+  - Refers to item: Statement (location: source ID 28, line 51, chars 1340-1392, hits: 1)
+- IC 1472 -> Item 10
+  - Refers to item: Line (location: source ID 28, line 53, chars 1416-1433, hits: 2)
+- IC 1472 -> Item 11
+  - Refers to item: Statement (location: source ID 28, line 53, chars 1416-1433, hits: 2)
+- IC 1480 -> Item 12
+  - Refers to item: Branch (branch: 1, path: 0) (location: source ID 28, line 53, chars 1412-1518, hits: 1)
+- IC 1529 -> Item 13
+  - Refers to item: Branch (branch: 1, path: 1) (location: source ID 28, line 53, chars 1412-1518, hits: 1)
+- IC 1480 -> Item 14
+  - Refers to item: Line (location: source ID 28, line 54, chars 1449-1507, hits: 1)
+- IC 1480 -> Item 15
+  - Refers to item: Statement (location: source ID 28, line 54, chars 1449-1507, hits: 1)
+- IC 1530 -> Item 16
+  - Refers to item: Line (location: source ID 28, line 56, chars 1527-1546, hits: 1)
+- IC 1530 -> Item 17
+  - Refers to item: Statement (location: source ID 28, line 56, chars 1527-1546, hits: 1)
+- IC 506 -> Item 18
+  - Refers to item: Function "mint" (location: source ID 28, line 59, chars 1559-1900, hits: 5)
+- IC 1213 -> Item 19
+  - Refers to item: Line (location: source ID 28, line 60, chars 1648-1665, hits: 5)
+- IC 1213 -> Item 20
+  - Refers to item: Statement (location: source ID 28, line 60, chars 1648-1665, hits: 5)
+- IC 1213 -> Item 21
+  - Refers to item: Statement (location: source ID 28, line 60, chars 1655-1665, hits: 5)
+- IC 1265 -> Item 22
+  - Refers to item: Branch (branch: 2, path: 0) (location: source ID 28, line 60, chars 1644-1740, hits: 0)
+- IC 1314 -> Item 23
+  - Refers to item: Branch (branch: 2, path: 1) (location: source ID 28, line 60, chars 1644-1740, hits: 5)
+- IC 1265 -> Item 24
+  - Refers to item: Line (location: source ID 28, line 61, chars 1681-1729, hits: 0)
+- IC 1265 -> Item 25
+  - Refers to item: Statement (location: source ID 28, line 61, chars 1681-1729, hits: 0)
+- IC 1315 -> Item 26
+  - Refers to item: Line (location: source ID 28, line 63, chars 1753-1765, hits: 5)
+- IC 1315 -> Item 27
+  - Refers to item: Statement (location: source ID 28, line 63, chars 1753-1765, hits: 5)
+- IC 1323 -> Item 28
+  - Refers to item: Branch (branch: 3, path: 0) (location: source ID 28, line 63, chars 1749-1844, hits: 0)
+- IC 1372 -> Item 29
+  - Refers to item: Branch (branch: 3, path: 1) (location: source ID 28, line 63, chars 1749-1844, hits: 5)
+- IC 1323 -> Item 30
+  - Refers to item: Line (location: source ID 28, line 64, chars 1781-1833, hits: 0)
+- IC 1323 -> Item 31
+  - Refers to item: Statement (location: source ID 28, line 64, chars 1781-1833, hits: 0)
+- IC 1373 -> Item 32
+  - Refers to item: Line (location: source ID 28, line 66, chars 1853-1872, hits: 5)
+- IC 1373 -> Item 33
+  - Refers to item: Statement (location: source ID 28, line 66, chars 1853-1872, hits: 5)
+- IC 1383 -> Item 34
+  - Refers to item: Line (location: source ID 28, line 67, chars 1882-1893, hits: 5)
+- IC 1383 -> Item 35
+  - Refers to item: Statement (location: source ID 28, line 67, chars 1882-1893, hits: 5)
+
+Anchors for Contract "DSCEnigne" (solc 0.8.21+commit.d9974bed.Linux.gcc, source ID 27):
+- IC 141 -> Item 46
+  - Refers to item: Function "depositCollateralAndMintDsc" (location: source ID 27, line 104, chars 3101-3151, hits: 0)
+- IC 171 -> Item 47
+  - Refers to item: Function "depositCollateral" (location: source ID 27, line 113, chars 3332-3727, hits: 0)
+- IC 511 -> Item 48
+  - Refers to item: Line (location: source ID 27, line 119, chars 3555-3632, hits: 0)
+- IC 511 -> Item 49
+  - Refers to item: Statement (location: source ID 27, line 119, chars 3555-3632, hits: 0)
+- IC 658 -> Item 50
+  - Refers to item: Line (location: source ID 27, line 120, chars 3642-3720, hits: 0)
+- IC 658 -> Item 51
+  - Refers to item: Statement (location: source ID 27, line 120, chars 3642-3720, hits: 0)
+- IC 161 -> Item 52
+  - Refers to item: Function "redeemCollateralForDsc" (location: source ID 27, line 123, chars 3733-3778, hits: 0)
+- IC 209 -> Item 53
+  - Refers to item: Function "redeemCollateral" (location: source ID 27, line 125, chars 3784-3823, hits: 0)
+- IC 219 -> Item 54
+  - Refers to item: Function "mintDsc" (location: source ID 27, line 127, chars 3829-3859, hits: 0)
+- IC 229 -> Item 55
+  - Refers to item: Function "burnDsc" (location: source ID 27, line 129, chars 3865-3895, hits: 0)
+- IC 151 -> Item 56
+  - Refers to item: Function "liquidate" (location: source ID 27, line 131, chars 3901-3933, hits: 0)
+- IC 199 -> Item 57
+  - Refers to item: Function "getHealthFactor" (location: source ID 27, line 133, chars 3939-3982, hits: 0)
+

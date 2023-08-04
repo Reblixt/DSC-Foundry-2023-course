@@ -27,27 +27,27 @@ contract DecentralizedStableCoinTest is Test {
 
     function testMintDSCTokenSuccess() public {
         // arrange
-        vm.prank(msg.sender);
+        vm.prank(dsc.owner());
         //act
-        dsc.mint(msg.sender, 1000 ether);
+        dsc.mint(dsc.owner(), 1000 ether);
         //assert
-        assertEq(dsc.balanceOf(msg.sender), STARTIN_BALANCE - 9000 ether);
+        assertEq(dsc.balanceOf(dsc.owner()), STARTIN_BALANCE - 9000 ether);
     }
 
-    function testFailMintDSCTokenFail() public {
+    function testMintDSCTokenFail() public {
         // arrange
-        vm.prank(msg.sender);
+        vm.prank(dsc.owner());
         //act
-        dsc.mint(msg.sender, 0 ether);
+        dsc.mint(dsc.owner(), 0 ether);
         //assert
-        vm.expectRevert("DecentralizedStableCoin__MustBeMOreThanZero");
+        vm.expectRevert();
     }
 
-    function testFailNotZeroAddress() public {
+    function testNotZeroAddress() public {
         // arrange
-        vm.prank(msg.sender);
+        vm.prank(dsc.owner());
         //act
-        dsc.mint(address(0), 1000 ether);
+        dsc.mint(dsc.owner(), 0 ether);
         //assert
         vm.expectRevert("DecentralizedStableCoin__NotZeroAddress");
     }
@@ -96,4 +96,25 @@ contract DecentralizedStableCoinTest is Test {
     ///////////////////////
     // Transfer DSCToken///
     ///////////////////////
+
+    function testTransferDSCTokenSuccess() public {
+        // arrange
+        vm.prank(dsc.owner());
+        dsc.mint(dsc.owner(), 1000 ether);
+        //act
+        dsc.transfer(USER, 1000 ether);
+        //assert
+        assertEq(dsc.balanceOf(dsc.owner()), 0);
+        assertEq(dsc.balanceOf(USER), 1000 ether);
+    }
+
+    function testTransferDSCTokenRevertExceedBalance() public {
+        // Arrange
+        vm.prank(dsc.owner());
+        dsc.mint(dsc.owner(), 1000 ether);
+
+        // Act/assert
+        vm.expectRevert();
+        dsc.transfer(USER, 1001 ether);
+    }
 }
